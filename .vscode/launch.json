@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SwapBooksApplication<SwapBooks>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ProjetoFinal.SwapBooks.SwapBooksApplication",
+            "projectName": "SwapBooks",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
