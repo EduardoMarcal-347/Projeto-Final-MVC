@@ -1,6 +1,10 @@
 package com.ProjetoFinal.SwapBooks.controller;
-
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+@Controller
 public class UsuarioController {
-
-    
+    @GetMapping("cadastraUsuario")
+    public String cadastraUsuario() {
+        return "cadastraUsuario";
+    }
 }

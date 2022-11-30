@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" th:include="template :: modelo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div th:fragment="conteudo" class="d-flex justify-content-center"
+        style="background-color: rgb(101, 133, 90); padding: 20px;">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nome Completo:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirma Senha:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Foto:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Telefone:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Cidade:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+
+            <button type="reset" class="btn btn-primary">Limpar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
