@@ -7,4 +7,8 @@ public class UsuarioController {
     public String cadastraUsuario() {
         return "cadastraUsuario";
     }
+    @GetMapping("login")
+    public String login() {
+        return "login";
+    }
 }
