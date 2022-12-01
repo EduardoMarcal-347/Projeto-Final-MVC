@@ -11,4 +11,14 @@ public class UsuarioController {
     public String login() {
         return "login";
     }
+
+    @GetMapping("perfil")
+    public String perfil(){
+        return "perfil";
+    }
+
+    @GetMapping("config")
+    public String config(){
+        return "config";
+    }
 }
