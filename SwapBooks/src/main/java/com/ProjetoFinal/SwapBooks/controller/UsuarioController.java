@@ -17,8 +17,4 @@ public class UsuarioController {
         return "perfil";
     }
 
-    @GetMapping("config")
-    public String config(){
-        return "config";
-    }
 }

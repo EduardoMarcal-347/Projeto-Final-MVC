@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" th:include="template :: modelo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Livro</title>
+</head>
+
+<body>
+    <div th:fragment="conteudo">
+        <div class="container text-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row d-flex justify-content-center">
+                    <h1>Mrs. Dalloway</h1>
+                    <img th:src="meulivroteste.jpg"
+                        style="width: 500px; height: 450px; margin-top: 20px; margin-bottom: 30px; border: 5px solid black; border-radius: 10px;">
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row d-flex justify-content-center">
+                    <h2>Informações do livro: </h2>
+                    <p>Autor: Virginia Woolf</p>
+                    <p>Seminovo</p>
+                    <p>235 páginas</p>
+                    <p>Drama</p>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias autem. Ad quod maiores
+                        reprehenderit laudantium labore fugiat sed cupiditate facilis. Pariatur, tenetur."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

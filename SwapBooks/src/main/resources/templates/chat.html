@@ -9,16 +9,37 @@
 </head>
 
 <body>
-    <div th:fragment="conteudo">
-        <div>
-            <img src="img/chat.png" style="width:20px ;" alt="">
-            <span>Conversas</span>
+    <div th:fragment="conteudo" style="padding: 80px; color: black;">
+        <div class="text-center m-2"style="color: white;">
+            <img th:src="chat.png" class=" img-thumbnail"style="width:30px ;" >
+            <span style="color: black; font-size: 20px;">Conversas</span>
         </div>
-        <div>
-            <div>Conversa 1</div>
-            <div>Conversa 2</div>
-            <div>Conversa 3</div>
-            <div>Conversa 4</div>
+        <div class="container p-3">
+        <table class="table table-bordered mb-3 rounded shadow" style="color: black;">
+            <tr>    
+                <th scope="col">#</th>
+                <th scope="col">Conversas</th>
+                <th scope="col">Livro</th>
+                <th scope="col">Usuário</th>
+                <td scope="col">
+                    <button type="submit" class="btn btn-primary">Selecionar</button>
+                    <button type="submit" class="btn btn-primary">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <tr>
+                    <th scope="col">1 <img th:src="default-profile.png" style="width:35px; border-radius:100% ;"></th>
+                    <th scope="col">Conversas</th>
+                    <th scope="col">Cleiton</th>
+                    <th scope="col">cleion_124</th>
+                    <td scope="col">
+                        <button type="submit" class="btn btn-primary">Selecionar</button>
+                        <button type="submit" class="btn btn-primary ">Excluir</button>
+                    </td>
+                </tr>
+            </tr>
+            
+        </table>
 
         </div>
     </div>
