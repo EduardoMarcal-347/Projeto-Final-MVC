@@ -8,6 +8,6 @@ public class LivroController {
     
     @GetMapping("/meuLivro")
     public String meuLivro(){
-        return "livro";
+        return "meuLivro";
     }
 }
