@@ -20,10 +20,9 @@ create table livro(
     autor varchar(60),
     descricao varchar(200),
     qtd_pags int,
-    id_genero int,
-    id_estado int,
+    genero varchar(60),
+    estado varchar(60),
     id_usuario int,
-	foreign key (id_genero) references genero(id_genero),
-    foreign key (id_estado) references estado(id_estado),
     foreign key (id_usuario) references usuario(id_usuario)
 );
+select * from livro;

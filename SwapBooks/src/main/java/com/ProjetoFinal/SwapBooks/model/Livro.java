@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Livro {
     private long id_livro,qtd_pags;
-    private String nome, autor, descricao;
+    private String nome, autor, descricao,genero,estado;
 }
