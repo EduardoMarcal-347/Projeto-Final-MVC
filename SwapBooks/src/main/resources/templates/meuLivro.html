@@ -10,23 +10,25 @@
 
 <body>
     <div th:fragment="conteudo">
-        <div class="container text-center">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="row d-flex justify-content-center">
+        <div class="container text-center shadow p-2 mt-5 mb-5 text-center">
+            <div class="col-12 d-flex justify-content-center ">
+                <div class="row d-flex justify-content-center" style="width: 60%;">
                     <h1>Mrs. Dalloway</h1>
-                    <img th:src="meulivroteste.jpg"
-                        style="width: 500px; height: 450px; margin-top: 20px; margin-bottom: 30px; border: 5px solid black; border-radius: 10px;">
+                    <img th:src="meulivroteste.jpg" class="rounded border border-dark mb-5 mt-3 shadow"
+                        style="width: 100%; height: 70%;">
                 </div>
             </div>
-            <div class="col-12 d-flex justify-content-center">
-                <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center border border-dark rounded mb-4 shadow" style="width: 60%; margin: auto;">
+                <div class="row d-flex justify-content-center ">
                     <h2>Informações do livro: </h2>
                     <p>Autor: Virginia Woolf</p>
                     <p>Seminovo</p>
                     <p>235 páginas</p>
                     <p>Drama</p>
-                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias autem. Ad quod maiores
-                        reprehenderit laudantium labore fugiat sed cupiditate facilis. Pariatur, tenetur."</p>
+                    <div class="justify-content-center">
+                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias autem. Ad quod maiores
+                            reprehenderit laudantium labore fugiat sed cupiditate facilis. Pariatur, tenetur."</p>
+                    </div>
                 </div>
             </div>
         </div>
