@@ -12,8 +12,8 @@
     <div th:fragment="conteudo">
         <div class="container-fluid text-center">
             <div class="col-12 d-flex justify-content-center p-5">
-                <div class="row d-flex justify-content-center p-5"
-                    style="border:2px solid rgb(195, 195, 195); border-radius: 5px;">
+                <div class="row d-flex justify-content-center p-5 shadow rounded border"
+                    >
                     <h1>Cadastre seu livro</h1>
                     <form action="novoLivro" method="post" th:object="${livro}">
                         <div class="form-col p-2">
@@ -29,22 +29,28 @@
                                 <label for="nrPaginas">Número de páginas</label>
                                 <input type="number" class="form-control" id="nrPaginas" th:field="*{qtd_pags}" placeholder="135">
                             </div>
-                            <div class="form-group p-2 mt-3">
-                                <label for="selectGenero">Qual o gênero do livro?</label>
-                                <input type="text" th:field="*{genero}">
-                                <br><br>
-                                <label for="selectEstado">O livro encontra-se em qual estado de conservação?</label>
-                                <input type="text" th:field="*{estado}">
-                                <br><br>
-                                <label for="inserirFoto">Insira fotos do livro</label>
-                                <br><br>
-                                <input type="file" class="form-control-file" id="inserirFoto">
-                                <div class="text-center px-5 mt-4">
-                                    <button type="reset" class="btn btn-primary"
-                                        style="margin-right:5px ; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Limpar</button>
-                                    <button type="submit" class="btn btn-primary"
-                                        style="margin-left: 5px; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Cadastrar</button>
-                                
+                            <div class="form-group p-3 mt-3 border shadow rounded">
+                                <div class="container mb-2">
+                                    <label for="selectGenero">Qual o gênero do livro?</label>
+                                    <input type="text" th:field="*{genero}">
+                                </div>
+                                <div class="container mb-2">
+                                    <label for="selectEstado">O livro encontra-se em qual estado de conservação?</label>
+                                    <input type="text" th:field="*{estado}">
+
+                                </div>
+                                <div class="container">
+                                    <label for="inserirFoto">Insira fotos do livro</label>
+                                    <br>
+                                    <input type="file" class="form-control-file" id="inserirFoto">
+                                    <div class="text-center px-5 mt-4">
+                                        <button type="reset" class="btn btn-primary"
+                                            style="margin-right:5px ; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Limpar</button>
+                                        <button type="submit" class="btn btn-primary"
+                                            style="margin-left: 5px; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Cadastrar</button>
+                                    
+                                    </div>
+
                                 </div>
                     </form>
 
